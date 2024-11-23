@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/styles/home.css">
+    <script src="/scripts/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="icon" type="image/png" href="/images/Contact Form Favicon.png">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Contact Form</h1>
+        </header>
+
+        <form id="contact-form" method="post" action="success">
+            <fieldset class="firstRow">
+                <div id="Fname">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname">
+                    <span id="err-fname" class="err">&#9888; Field is required</span>
+                </div>
+
+                <div id="Lname">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname">
+                    <span id="err-lname" class="err">&#9888; Field is required</span>
+                </div>
+
+                <div id="Job">
+                    <label for="job">Job Title</label>
+                    <input type="text" name="job" id="job">
+                </div>
+            </fieldset>
+            <fieldset class="secondRow">
+                <div id="Company">
+                    <label for="company">Company</label>
+                    <input type="text" name="company" id="company">
+                </div>
+
+                <div id="Linkedin">
+                    <label for="linkedin">LinkedIn URL</label>
+                    <input type="url" name="linkedin" id="linkedin">
+                    <span id="err-linkedin" class="err">&#9888; This field must start with "https://linkedin.com/in/"</span>
+                </div>
+
+                <div id="Email">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email">
+                    <span id="err-email" class="err">&#9888; Invalid email format</span>
+                </div>
+            </fieldset>
+
+            <fieldset class="thirdRow">
+                <div id="Met">
+                    <label for="met">How did we meet?</label>
+                    <select name="met" id="met">
+                        <option value="none">Please select</option>
+                        <option value="Meetup">Meetup</option>
+                        <option value="Job Fair">Job Fair</option>
+                        <option value="Networking Event">Networking Event</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span id="err-met" class="err">&#9888; Field is required</span>
+                </div>
+
+                <div id="Othermeet">
+                    <label for="otherMeet">Other (please specify)</label>
+                    <input type="text" name="otherMeet" id="otherMeet">
+                </div>
+            </fieldset>
+
+            <fieldset class="fourthRow">
+                <div id="Message">
+                    <label for="message">Message</label>
+                    <textarea rows="7" name="message" id="message"></textarea>
+                </div>
+            </fieldset>
+            <fieldset class="fifthRow">
+                <div id="Mailinglist">
+                    <input type="checkbox" name="mailinglist" id="mailinglist">
+                    <label for="mailinglist">Please add me to your mailing list</label>
+                    <span id="err-mailinglist" class="err">&#9888; An email is required</span>
+                </div>
+            </fieldset>
+
+            <fieldset class="sixthRow">
+                <div id="Radio">
+                    <label>Choose an email format:</label>
+                    <input type="radio" name="radio" id="html" value="HTML">
+                    <label for="html">HTML</label>
+                    <input type="radio" name="radio" id="text" value="Text">
+                    <label for="text">Text</label>
+                    <span id="err-radio" class="err">&#9888; Field is required</span>
+                </div>
+            </fieldset>
+
+            <button type='submit' class='submit' name='submit' value='edit'>Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
